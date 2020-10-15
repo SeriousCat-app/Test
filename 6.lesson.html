@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="header"> hello </h1>
+    <button onclick="red()">Red</button>
+    <button onclick="green()">Green</button>
+
+    <script>
+        //--------------------------
+      /*  function add(a, b) {
+            return a + b;
+        }
+        var x = add(5, 7);
+        console.log(x);
+        console.log(add(3, -1));
+        //------------------------
+
+        function add(a, b) {
+            console.log(a + b);
+        }
+        add(5, 5);*/
+        //----------------------
+        function red() {
+            console.log("red");
+            document.getElementById("header").innerHTML = "hi";
+        }
+        function green() {
+            console.log("green");
+            document.getElementById("header").style.color = "green";
+        }
+
+    </script>
+</body>
+
+</html>
