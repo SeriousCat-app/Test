@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="header">Please, enter the ID </h1>
+    <input onFocus="this.value=''" type="password" placeholder="Type something..." id="39001302223 123" />
+    <button type="button" onclick="button();" id="but">Search</button>
+
+    <script type="text/javascript">
+
+        var dmitri = [
+            {
+                first_name: "Dmitri",
+                last_name: "Beljajev",
+                gender: "Male",
+                age: 30,
+                adress: "Tallinn",
+
+            }
+        ]
+
+        var irina = [
+            {
+                first_name: "Irina",
+                last_name: "Nik.",
+                gender: "Female",
+                age: 37,
+                adress: "Tallinn",
+
+            }
+        ]
+
+        function button() {
+            id = "39001302223 123";
+
+            var str = document.getElementById(id).value;
+
+
+
+            if (str === "39001302223") {
+                //alert( "Dmitri" );
+                for (var person of dmitri) {
+                    console.log(person.first_name, person.last_name, "Age:", person.age, "City:", person.adress);
+                }
+                //console.log(dmitri);
+            }
+            else if (str === "123") {
+
+                for (var person of irina) {
+                    console.log(person.first_name, person.last_name, "Age:", person.age, "City:", person.adress);
+                }
+            }
+            else {
+                alert("Wrong ID");
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
