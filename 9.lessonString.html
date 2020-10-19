@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Type smth</h1>
+    <input type="text" id= "inp"/>
+    <button onclick="button()"> Click</button>
+    <p id="output"> </p>
+    <script>
+        function button(){
+            var text = document.getElementById("inp").value;
+            //При вводе отображает только большие/маленькие буквы
+            //output.innerHTML = text.toUpperCase();
+            //output.innerHTML = text.toLoweCase();
+
+            //При вводе собачки в начале/конце и затем текста отображается true/false
+            //output.innerHTML = text.trim().startsWith("@");
+            //output.innerHTML = text. EndWith("@");
+            output.innerHTML = "You've just typed:" + text.trim();
+            console.log(text); //В консоле увидим пробелы которые поставили в input
+            console.log(text.length);//Отображает кол-во символов (включая все пробелы)
+        }
+
+
+    </script>
+</body>
+</html>
