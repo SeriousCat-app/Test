@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //--------------------------------------------------
+       //Выдаст ряд значений от 0 до 10
+       // 1. Define variable or initial value
+       // 2. Define condition
+       // 3. Put increment. i++ tells to increase by 1
+       for( var i = 0; i <=10; i++  ){ //!!!i+=2
+            console.log(i);
+            if(i==7){
+                break; //Will stop the sequence
+            }
+           //Inside for loop it will output in alternative way
+            //console.log("tim");
+        }
+        // Outside loop it will  output at the end
+        //console.log("tim");
+        //-------------------------------------------------
+        
+        function findInArray( arr, value){
+           
+            for (var i = 0; i < arr.length; i++){
+                if(arr[i] == value){
+                    return true;
+                //}else  (arr[i] !== value){
+                   // return "not true";
+                   // }
+                }
+            }
+            return false;
+        }
+        var arr = [1,2,3,5,6,7,"tim"];
+        console.log(findInArray(arr, 5)); // value inside array
+        console.log(findInArray(arr, 10)); // value outside array
+        console.log(findInArray(arr, "dg")); // not value
+
+        //--------------------------------
+        // Возводит в степень
+        function nsquared(n){
+            
+            for (var i = 0;i<n; i++){
+                for(var j=0; j<n; j++){
+                    console.log("run")
+                }
+            }
+        }
+        nsquared(5);
+        //--------------------------------
+
+    </script>
+</body>
+</html>
