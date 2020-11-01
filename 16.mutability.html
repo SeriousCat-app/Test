@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// IN THIS LESSON NEED TO UNDERSTAND THE DEFFERENCE BETWEEN PRIMITIVE TYPE AND REFERENCE SLASH OBJECT.
+
+       /* function add5(num){
+            //num+= 5; //The same as num = num + 5 
+            //num = false; //Is for var x = true
+            console.log(num);
+        }
+       // var x = 5;
+       // var x = "string";
+       // var x = true;
+        add5(x);
+        console.log(x);
+        */
+
+        //------------------------------------
+        //function append5 (arr){
+            
+            // 1. We push 5 into arr.
+            // arr.push(5);
+            
+            // 2.
+            //arr[1] = 5;
+            
+            //3.
+            // var arr2 = arr;
+            // arr2[1] = 100;
+            // console.log(arr);
+            // console.log(arr);
+        //}
+        // Here we passe actual object to the parameter arr.
+        /*var x = [1,2,3,4]
+        append5(x);
+        console.log(x);
+            */
+
+        //-------------------------------
+        var x = [1,20,3,4];
+        var y = x.slice(0,3); // Will show x array but only with 3 elements
+        y[2] = 999; // Will change the secon element but only for var y = x.
+        console.log(x);
+        console.log(y);
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       
+      var arr = ["tim", "joe", "bill"]
+      console.log(arr);
+        for (var i = 0; i < arr.length; i++){
+            console.log(arr[i]);
+            arr[i] = 5;
+            console.log(arr[i]);
+        }
+        //arr is changed completely with 5
+        console.log(arr);
+        
+       /* for ( var element of arr){
+            //We introduce new variable "let" but we do not change actually arr. 
+            //So, the answer will be  
+            // tim, 5, joe, 5, bill, 5
+            //"tim",
+            // "joe", 
+            // "bill"
+            
+            console.log(element);
+            element = 5;
+            console.log(element);
+        }
+        //element works "independetly" of arr, so here, outside the loop for the arr will be with its own elemts: tim, joe, bill
+        console.log(arr);*/
+
+
+        var x = "hello";
+        for (letter of x){
+            console.log(letter);
+        }
+
+        //OR
+
+        var x = "hello";
+        for (var i = 0; i < x.length; i++){
+            console.log(x[i]);
+        }
+
+    </script>
+</body>
+</html>
